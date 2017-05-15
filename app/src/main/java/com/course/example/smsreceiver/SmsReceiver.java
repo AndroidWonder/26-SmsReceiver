@@ -2,7 +2,7 @@
  * Receive and transmit an SMS. All the work is done in the Broadcast Receiver.
  * Be sure to notice the intent filter and permissions in the Manifest.
  * These are both considered dangerous permissions so go into Settings on the
- * emulator to allow SMS at runtime.
+ * emulator for this application to allow SMS at runtime.
  * To send an SMS use the emulator extended control panel.
  *
  */
