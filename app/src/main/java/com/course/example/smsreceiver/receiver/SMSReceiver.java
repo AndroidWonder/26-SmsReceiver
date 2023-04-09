@@ -1,6 +1,8 @@
 /* This example reads an Sms message as a protocol data unit(pdu), which is the
 industry standard format for an Sms message. Large messages may be broken into
 several so we use an array of Objects.
+
+Remember to set permission in Settings to receive an SMS.
  */
 
 package com.course.example.smsreceiver.receiver;
