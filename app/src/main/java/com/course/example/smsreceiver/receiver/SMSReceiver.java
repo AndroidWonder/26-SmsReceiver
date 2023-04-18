@@ -1,6 +1,4 @@
-/* This example reads an Sms message as a protocol data unit(pdu), which is the
-industry standard format for an Sms message. Large messages may be broken into
-several so we use an array of Objects.
+/* This example reads a message and responds to sender.
 
 Remember to set permission in Settings to receive an SMS.
  */
@@ -28,7 +26,6 @@ public class SMSReceiver extends BroadcastReceiver {
         Log.i(TAG, "Intent recieved: " + intent.getAction());
 
         //read messages from hardware into an array
-        if (intent.getAction().equals(SMS_RECEIVED)) {
 
             Bundle bundle = intent.getExtras();
             if(bundle == null) Log.e(TAG, "null bundle");
@@ -53,10 +50,6 @@ public class SMSReceiver extends BroadcastReceiver {
                 Log.i(TAG, "SMS Acknowledge Sent");
             }
             // End of loop
-
-
-
-        }
 
     }
 }
